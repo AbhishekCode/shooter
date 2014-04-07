@@ -3,8 +3,11 @@ var play_state = {
     // No more preload, since it is already done in the 'load' state
 
     create: function() { 
-        var space_key = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-        space_key.onDown.add(this.jump, this); 
+        //var space_key = this.game.input.keyboard.addKey(Phaser.input.onDown);
+		 game.input.onDown.add(this.jump, this);
+		//var touch_key = this.game.input.touch.addKey(Phaser.mouse.touch);
+        //space_key.onDown.add(this.jump, this); 
+		//touch_key.onDown.add(this.jump, this);
 
         this.pipes = game.add.group();
         this.pipes.createMultiple(20, 'pipe');  

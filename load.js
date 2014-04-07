@@ -1,10 +1,10 @@
+
 var load_state = {  
     preload: function() { 
         this.game.stage.backgroundColor = '#71c5cf';
-        this.game.load.image('player', 'img/player.png');  
-        this.game.load.image('bullet', 'img/bullet.png');  
-        this.game.load.image('enemy', 'img/enemy.png');  
-        this.game.load.audio('shoot', 'assets/jump.wav');
+        this.game.load.image('bird', 'assets/bird.png');  
+        this.game.load.image('pipe', 'assets/pipe.png');  
+        this.game.load.audio('jump', 'assets/jump.wav');
     },
 
     create: function() {
